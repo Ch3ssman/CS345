@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: aliceblue;
 }
 
 #nav-header {
@@ -33,4 +34,17 @@ body {
     bottom: 0;
     background-color: brown;
     width: 100%;
+}
+
+#main-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pop-up-register {
+    background-color: blue;
+    width: 400px;
+    height: 200px;
+    display: inline-block;
 }
