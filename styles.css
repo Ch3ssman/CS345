@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#nav-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: brown;
+    border-color: black;
+    padding: 1rem;
+}
+
+.nav-logo-header {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links-header {
+    display: flex;
+    align-items: center;
+}
+
+.nav-auth-header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+
+#page-footer {
+    position: fixed;
+    bottom: 0;
+    background-color: brown;
+    width: 100%;
+}
