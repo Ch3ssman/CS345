@@ -9,30 +9,80 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation bar or other header content -->
     <header id="nav-header">
-        <div class="nav-logo-header"> 
-            <h1>FreeCycle</h1>
-            <ul><a>Browse</a></ul>
-            <ul><a>Contact Us</a></ul>
+        <div class="nav nav-logo-header"> 
+            <h1><a href="./index.html">FreeCycle</a></h1>
+            <a class="text">Browse</a>
+            <a class="text">Contact Us</a>
         </div>
-        <div class="nav-auth-header">
-            <button>Login</button>
+        <div class="nav nav-auth-header">
+            <a>Login</a>
         </div>
-        <!-- Navigation bar or other header content -->
     </header>
     
+    <!-- Main section for the homepage content-->
     <main>
         <section id="main-section">
             <div class="pop-up-register">
-                <p> </p>
+                <div class="pop-up-register-wrapper">
+                    <div>
+                        <p>Some information to display here... 
+                            Some information to display here...
+                            Some information to display here...
+                            Some information to display here...
+                            Some information to display here...
+                        </p>
+                    </div>
+                    <div>
+                        <label class="button btn" for="modal-1">JOIN US NOW!</label>
+                        <input class="modal-state" id="modal-1" type="checkbox" />
+                        <div class="modal">
+                            <label class="modal__bg" for="modal-1"></label>
+                            <div class="modal__inner">
+                              <label class="modal__close" for="modal-1"></label>
+                              <form id="form-wrapper">
+                                <div>
+                                    <h1>Registration Form</h1>
+                                </div>
+                                <div id="form-details-wrapper">
+                                    <div class="form-details">
+                                        <label>Given name</label>
+                                        <input class="input-box"></input>
+                                        <label>Surname</label>
+                                        <input class="input-box"></input>
+                                        <label>Username</label>
+                                        <input class="input-box"></input>
+                                        <label>Password</label>
+                                        <input class="input-box"></input>
+                                    </div>
+                                    <div class="form-details">
+                                        <label>Home Address</label>
+                                        <input class="input-box"></input>
+                                        <label>Work Address</label>
+                                        <input class="input-box"></input>
+                                        <label>Mobile Number</label>
+                                        <input class="input-box"></input>
+                                        <label>Email</label>
+                                        <input class="input-box"></input>
+                                    </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                    </div>
+                    <div>
+                        <a>Already a member? Log in</a>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h2>Main Content Section</h2>
-                <p>Welcome to your website!</p>
+            <div id="pop-up-second-wrapper" class="pop-up-big-only">
+                <p></p>
             </div>
         </section>
     </main>
 
+    <!-- Footer bar content -->
     <footer id="page-footer">
         <p>2024 Website</p>
     </footer>
