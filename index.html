@@ -7,17 +7,25 @@
     <title>Your Page Title</title>
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation bar or other header content -->
     <header id="nav-header">
         <div class="nav nav-logo-header"> 
-            <h1><a href="./index.html">FreeCycle</a></h1>
-            <a class="nav-clicks">Browse</a>
-            <a class="nav-clicks">Contact Us</a>
+            <div class="nav-logo-header-left">
+                <h1><a href="./index.html">FreeCycle</a></h1>
+            </div>
+            <div class="nav-logo-header-right">
+                <a class="nav-clicks">Browse</a>
+                <a class="nav-clicks">Contact Us</a>
+            </div>
         </div>
         <div class="nav nav-auth-header">
             <a class="nav-clicks">Login</a>
+            <i class="fa-solid fa-user"></i>
         </div>
     </header>
     
@@ -26,12 +34,12 @@
         <section id="main-section">
             <div class="pop-up-register">
                 <div class="pop-up-register-wrapper">
-                    <div>
-                        <p>Some information to display here... 
-                            Some information to display here...
-                            Some information to display here...
-                            Some information to display here...
-                            Some information to display here...
+                    <div class="pop-up-information">
+                        <h1>Welcome to FreeCycle!</h1>
+                        <p>
+                            Unlock a world of giving and receiving by signing up today. As a member, you'll gain access to a vibrant network of individuals passionate about sharing resources and reducing waste. Whether you have items to give away or are seeking treasures for your home, your participation makes a meaningful impact.
+                            <br><br>
+                            Register now to start your journey toward a more sustainable and connected future. Together, we can build a community where generosity knows no bounds. Join us and experience the joy of giving freely!"
                         </p>
                     </div>
                     <div>
@@ -42,37 +50,41 @@
                             <div class="modal__inner">
                               <label class="modal__close" for="modal-1"></label>
                               <form id="form-wrapper">
-                                <div>
+                                <div class="registration-form-header">
                                     <h1>Registration Form</h1>
                                 </div>
                                 <div id="form-details-wrapper">
                                     <div class="form-details">
                                         <label>Given name</label>
-                                        <input class="input-box"></input>
+                                        <input class="input-box" type="text" placeholder="Enter Name"></input>
                                         <label>Surname</label>
-                                        <input class="input-box"></input>
+                                        <input class="input-box" type="text" placeholder="Enter Surname"></input>
                                         <label>Username</label>
-                                        <input class="input-box"></input>
+                                        <input class="input-box" type="text" placeholder="Enter Usermame"></input>
                                         <label>Password</label>
-                                        <input class="input-box"></input>
+                                        <input class="input-box" type="text" placeholder="Enter Password"></input>
                                     </div>
                                     <div class="form-details">
                                         <label>Home Address</label>
-                                        <input class="input-box"></input>
+                                        <input class="input-box" type="text" placeholder="Enter Home Address"></input>
                                         <label>Work Address</label>
-                                        <input class="input-box"></input>
+                                        <input class="input-box" type="text" placeholder="Enter Work Address"></input>
                                         <label>Mobile Number</label>
-                                        <input class="input-box"></input>
+                                        <input class="input-box" type="text" placeholder="Enter Phone Number"></input>
                                         <label>Email</label>
-                                        <input class="input-box"></input>
+                                        <input class="input-box" type="text" placeholder="Enter Email"></input>
                                     </div>
+                                </div>
+                                <div class="form-sign-up-button">
+                                    <button>Sign Up</button>
                                 </div>
                               </form>
                             </div>
                           </div>
                     </div>
-                    <div>
-                        <a>Already a member? Log in</a>
+                    <div class="pop-up-login-button">
+                        <a for="modal-1">Already a member? Log in</a>
+                        <input class="modal-state" id="modal-1" type="checkbox" />
                     </div>
                 </div>
             </div>
@@ -82,12 +94,8 @@
         </section>
     </main>
 
-    <!-- Footer bar content -->
-    <!-- <footer id="page-footer">
-        <p>2024 Website</p>
-    </footer> -->
-
     <!-- Link to external JavaScript file -->
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/c031884c8d.js" crossorigin="anonymous"></script>
 </body>
 </html>

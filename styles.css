@@ -5,8 +5,10 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  overflow: hidden;
   height: 100%;
-  width: 100%
+  width: 100%;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 body a {
@@ -19,11 +21,11 @@ body a {
   justify-content: space-between;
   background-color: #C35831;
   border-color: black;
-  height: 3rem;
+  height: 3.5rem;
 }
 
 .nav h1 {
-  font-size: 34px;
+  font-size: 40px;
 }
 
 .text,
@@ -32,7 +34,7 @@ body a {
   padding: 0;
 }
 
-.nav{
+.nav {
   padding: 0.3rem;
 }
 
@@ -41,6 +43,22 @@ body a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.nav-logo-header-left {
+  padding-right: 1.5rem;
+}
+
+.nav-logo-header-right a {
+  padding-right: 1rem;
+}
+
+.nav-logo-header a {
+  cursor: pointer;
+}
+
+.nav-logo-header-right a:hover {
+  color: #9E3C18;
 }
 
 .nav-links-header {
@@ -53,28 +71,32 @@ body a {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+
+.nav-auth-header:hover {
+  background-color: #9E3C18;
+}
+
+.nav-auth-header a {
+  width: auto;
+  padding: 0.5rem;
 }
 
 .nav-clicks {
   width: 100px;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 400;
   text-align: center;
   position: relative;
-}
-
-#page-footer {
-  position: fixed;
-  bottom: 0;
-  background-color: #C35831;
-  width: 100%;
-  text-align: center;
 }
 
 #main-section {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin: 1.2rem;
 }
 
 .pop-up-register {
@@ -87,13 +109,22 @@ body a {
 }
 
 .pop-up-register-wrapper {
-  width: auto;
   display: inline-block;
-  max-width: 500px;
+  width: 520px;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 15px;
   background-color: #C35831;
-  padding: 1em 2em;
+  padding: 0.6em 2em 1.4em 2em;
+}
+
+.pop-up-information {
+  font-size: 17px;
+  color: #FFAD8F;
+}
+
+.pop-up-information h1 {
+  font-size: 30px;
+  margin: 2rem 2rem 1.5rem 2rem;
 }
 
 .pop-up-big-only {
@@ -107,15 +138,17 @@ body a {
 }
 
 .button {
-  background-color: #228759;
+  background-color: #803114;
   width: auto;
   height: auto;
   margin: 1rem;
-  color: #64B490;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 15px;
 }
 
 .button:hover {
-  background-color: #106D43;
+  background-color: #5a1800;
 }
 
 /* [Object] Modal
@@ -162,7 +195,7 @@ body a {
   right: 0;
   bottom: 0;
   left: 0;
-  width: 65%;
+  width: 55%;
   margin: auto;
   overflow: auto;
   background: #fff;
@@ -186,17 +219,12 @@ body a {
   position: absolute;
   width: 2px;
   height: 1.5em;
-  background: #ccc;
+  background: black;
   display: block;
   transform: rotate(45deg);
   left: 50%;
   margin: -3px 0 0 -1px;
   top: 0;
-}
-
-.modal__close:hover:after,
-.modal__close:hover:before {
-  background: #aaa;
 }
 
 .modal__close:before {
@@ -248,23 +276,70 @@ p img {
   flex-direction: column;
 }
 
+.registration-form-header {
+  font-size: 22px;
+}
+
+.registration-form-header h1 {
+  margin-bottom: 12px;
+  padding-left: 24px;
+}
+
 #form-details-wrapper {
   display: flex;
   flex-direction: row;
+  font-size: 16px;
+  font-weight: 300;
 }
-  
-  .input-box {
-    height: 2rem;
-    width: 100%;
-    border-radius: 5px;
-    border-width: 1px;
-  }
 
-#form-details-wrapper label, input {
-    display: block;
+.input-box {
+  height: 2rem;
+  width: 100%;
+  border-width: 0;
+  background-color: #ecebebda;
+  padding-left: 0.5rem;
+  border-radius: 5px;
+  height: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+#form-details-wrapper label,
+input {
+  display: block;
 }
 
 .form-details {
   width: 30rem;
   padding: 1.5rem;
+}
+
+.form-details label {
+  padding: 5px;
+  font-weight: 450;
+}
+
+.pop-up-login-button {
+  text-decoration: underline;
+  text-decoration-color: #FFAD8F;
+}
+
+.form-sign-up-button {
+  padding-left: 24px;
+  
+}
+
+.form-sign-up-button button {
+  width: 100px;
+  height: 35px;
+  background-color: #C35831;
+  border-width: 0;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.form-sign-up-button :hover {
+  background-color: #943715;
+  cursor: pointer;
 }
