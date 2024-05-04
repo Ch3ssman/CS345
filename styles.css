@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  /* background-image: url("background-img.jpg"); */
+  background-image: url("background-img.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -22,15 +22,25 @@ body a {
   height: 3rem;
 }
 
+.nav h1 {
+  font-size: 34px;
+}
+
 .text,
 .ul {
   margin: 0;
   padding: 0;
 }
 
+.nav{
+  padding: 0.3rem;
+}
+
 .nav-logo-header {
+  margin-left: 0.6rem;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .nav-links-header {
@@ -40,21 +50,18 @@ body a {
 
 .nav-auth-header {
   width: 6rem;
-  text-align: center;
-  justify-content: center;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.nav a {
-  height: 100%;
-  padding: auto;
+.nav-clicks {
+  width: 100px;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  position: relative;
 }
-
-.text:hover {
-  background-color: #9E3C18;
-}
-
-  {}
 
 #page-footer {
   position: fixed;
@@ -210,21 +217,10 @@ body a {
    * =============================== */
 .btn {
   cursor: pointer;
-  background: #3C986E;
   display: inline-block;
   padding: .5em 1em;
   color: #fff;
   border-radius: 3px;
-}
-
-.btn:hover,
-.btn:focus {
-  background: #2ecc71;
-}
-
-.btn:active {
-  background: #27ae60;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, .2) inset;
 }
 
 .btn--blue {
