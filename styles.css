@@ -200,7 +200,7 @@ body a {
   overflow: auto;
   background: #fff;
   border-radius: 5px;
-  padding: 1em 2em;
+  padding: 1.5em 2em;
   height: 50%;
 }
 
@@ -281,7 +281,8 @@ p img {
 }
 
 .registration-form-header h1 {
-  margin-bottom: 12px;
+  margin-bottom: 15px;
+  margin-top: 18px;
   padding-left: 24px;
 }
 
