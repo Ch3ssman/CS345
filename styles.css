@@ -243,7 +243,7 @@ body a {
 
 /* Other
    * =============================== */
-.btn {
+#trigger-modal {
   cursor: pointer;
   display: inline-block;
   padding: .5em 1em;
@@ -251,16 +251,16 @@ body a {
   border-radius: 3px;
 }
 
-.btn--blue {
+#trigger-modal--blue {
   background: #2980b9;
 }
 
-.btn--blue:hover,
-.btn--blue:focus {
+#trigger-modal--blue:hover,
+#trigger-modal--blue:focus {
   background: #3498db;
 }
 
-.btn--blue:active {
+#trigger-modal--blue:active {
   background: #2980b9;
 }
 
@@ -271,7 +271,7 @@ p img {
   margin: 0 1em 1em 0;
 }
 
-#form-wrapper {
+#form-ct {
   display: flex;
   flex-direction: column;
 }

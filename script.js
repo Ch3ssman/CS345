@@ -1,4 +1,4 @@
-document.querySelector('.btn').addEventListener('click', function() {
+document.querySelector('#trigger-modal').addEventListener('click', function() {
     document.getElementById("pop-up-second-wrapper").style.display = "none";   
 });
 
